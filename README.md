@@ -22,11 +22,16 @@
 # Attributes
 
     // file: nodes/host.json
+    //
+    // defaults:
     {
        "subway": {
            "src_url": "https://github.com/jmervine/subway.git",
            "git_branch": "master",
-           "destination": "~"
+           "user": "root",
+           "destination": "/var/local/subway"
+             // only used when user == 'root'
+             // otherwise, destination == '/home/USER'
        }
     }
 
