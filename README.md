@@ -10,7 +10,6 @@
 ## This has been tested on:
 
 * CentOS 6.2
-* Ubuntu 10.04.4 LTS (lucid64)
 
 # Usage
 
