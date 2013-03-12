@@ -9,7 +9,6 @@ end
 include_recipe 'git'
 include_recipe 'nodejs'
 include_recipe 'npm'
-include_recipe 'nginx'
 include_recipe 'nginx_proxy'
 
 url    = node['subway']['src_url']
