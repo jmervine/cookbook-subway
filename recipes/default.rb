@@ -27,6 +27,12 @@ git "#{dest}" do
   revision   branch
 end
 
+if user != "root"
+  execute "change #{dest} owner" do
+    command "chown -R #{user}: #{dest}"
+  end
+end
+
 execute "npm install" do
   cwd dest
   if user == "root"
