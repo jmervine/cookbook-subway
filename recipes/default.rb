@@ -55,7 +55,7 @@ bash "usage" do
       echo "To run subway, login in to `hostname` and run the following commands:"
       echo " "
       echo "  $ cd /home/#{user}/subway"
-      echo "  $ ./subway"
+      echo "  $ nohup ./subway &"
       echo " "
     EOM
   end
